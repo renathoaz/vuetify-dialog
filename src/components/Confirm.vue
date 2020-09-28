@@ -64,7 +64,7 @@ export default {
       if (this.icon === false) {
         return
       }
-      return this.icon || (this.$vuetify && this.$vuetify.icons && this.$vuetify.icons[this.type]) || this.type
+      return this.icon || (this.$vuetify && this.$vuetify.icons && this.$vuetify.icons.values[this.type]) || this.type
     },
     getText () {
       return typeof this.text === 'function' ? this.text() : this.text
